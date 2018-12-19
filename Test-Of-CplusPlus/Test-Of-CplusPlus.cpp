@@ -74,6 +74,7 @@ int main()
 
 	//Calls Another class from another class lol.
 	Anotherclass anotherclass;
+	cout << anotherclass.test() << endl;
 
 	return EXIT_SUCCESS; //Or you can return 0; TOO
 
