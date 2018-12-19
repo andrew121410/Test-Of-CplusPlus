@@ -53,13 +53,13 @@ int main()
 	bool isTest = true;
 
 	int listint[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-	string liststring[] = { "hello ", "my ", "name ", "is ", "andrew " };
-		// END OF VAR EXAMPLES
+	string liststring[] = { "hello ", "my ", "name ", "is ", "@name " };
+	// END OF VAR EXAMPLES
 
 	std::cout << "Just an Example!" << endl;
 
-	cout << "this is a " << testvarstring << endl; //<-- you can use this OR
-	std::cout << "this is a " << testvarstring << endl; //<-- this.
+	cout << "this is a " << testvarstring << endl; //<-- you can use this if you ARE using the namespace of std.
+	std::cout << "this is a " << testvarstring << endl; //<-- Or this if your NOT using namespace of std.
 
 	//RUN FUNCTIONS
 	testfunction(testvarstring);
