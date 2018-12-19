@@ -10,9 +10,18 @@ using namespace std;
 //CLASSES
 class Testclass {
 	private:
+		string privatetext;
 	public:
-		Testclass() {
+		Testclass() { //Constructor for Testclass
 			cout << "You called the test class." << endl;
+		}
+
+		//FUNCTIONS IN Testclass
+		void SetPrivateText(string TMPtext) { //A Setter for var privatetext
+			this->privatetext = TMPtext;
+		}
+		string GetPrivateText() { //A Getter for var privatetext
+			return this->privatetext;
 		}
 };
 
@@ -59,6 +68,8 @@ int main()
 	cout << liststring[0] << liststring[1] << liststring[2] << liststring[3] << liststring[4] << endl; //HOPE you get it xD
 
 	Testclass testclass; //Calls the constructor of Testclass and also makes an object.
+	testclass.SetPrivateText("hehe");
+	cout << "The private text is " << testclass.GetPrivateText() << endl;
 
 	return EXIT_SUCCESS; //Or you can return 0; TOO
 
