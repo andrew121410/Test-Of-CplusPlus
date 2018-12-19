@@ -7,8 +7,16 @@
 
 using namespace std;
 
-//FUNCTIONS
+//CLASSES
+class Testclass {
+	private:
+	public:
+		Testclass() {
+			cout << "You called the test class." << endl;
+		}
+};
 
+//FUNCTIONS
 void testfunction(string test) {
 	cout << "input fuction got " << test << endl;
 }
@@ -49,6 +57,8 @@ int main()
 	//END
 	liststring[4] = TEMP; //CHANGES 4 thing in the list too TMP;
 	cout << liststring[0] << liststring[1] << liststring[2] << liststring[3] << liststring[4] << endl; //HOPE you get it xD
+
+	Testclass testclass; //Calls the constructor of Testclass and also makes an object.
 
 	return EXIT_SUCCESS; //Or you can return 0; TOO
 
