@@ -2,11 +2,28 @@
 //
 
 #include "pch.h"
+#include <string>
 #include <iostream>
 
+using namespace std;
+
+//MAIN FUNCTION
 int main()
 {
-    std::cout << "Hello World!\n"; 
+	//VAR EXAMPELS
+	string testvarstring = "test";
+	int testvarint = 1;
+	char testvarchar = 'A';
+	double testvardouble = 1.2222222222;
+	float testvarfloat = 1.2222222222;
+		// END
+
+	std::cout << "Just an Example!";
+
+	cout << "this is a " << testvarstring << endl; //<-- you can use this OR
+	std::cout << "this is a " << testvarstring; //<-- this.
+
+	return 0;
 
 }
 
