@@ -4,6 +4,7 @@
 #include "pch.h"
 #include <string>
 #include <iostream>
+#include "Anotherclass.h"
 
 using namespace std;
 
@@ -70,6 +71,9 @@ int main()
 	Testclass testclass; //Calls the constructor of Testclass and also makes an object.
 	testclass.SetPrivateText("hehe");
 	cout << "The private text is " << testclass.GetPrivateText() << endl;
+
+	//Calls Another class from another class lol.
+	Anotherclass anotherclass;
 
 	return EXIT_SUCCESS; //Or you can return 0; TOO
 
