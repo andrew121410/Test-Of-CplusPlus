@@ -7,6 +7,12 @@
 
 using namespace std;
 
+//FUNCTIONS
+
+void inputfunction(string test) {
+	cout << "input fuction got " << test << endl;
+}
+
 //MAIN FUNCTION
 int main()
 {
@@ -15,15 +21,16 @@ int main()
 	int testvarint = 1;
 	char testvarchar = 'A';
 	double testvardouble = 1.2222222222;
-	float testvarfloat = 1.2222222222;
+	bool isTest = true;
 		// END
 
-	std::cout << "Just an Example!";
+	std::cout << "Just an Example!" << endl;
 
 	cout << "this is a " << testvarstring << endl; //<-- you can use this OR
-	std::cout << "this is a " << testvarstring; //<-- this.
+	std::cout << "this is a " << testvarstring << endl; //<-- this.
 
-	return 0;
+	inputfunction(testvarstring);
+	return EXIT_SUCCESS; //Or you can return 0; TOO
 
 }
 
